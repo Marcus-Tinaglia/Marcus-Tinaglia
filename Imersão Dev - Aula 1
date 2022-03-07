@@ -5,12 +5,18 @@ var notaDoSegundoBimestre = 7
 var notaDoTerceiroBimestre = 4
 var notaDoQuartoBimestre = 2
 
-var notaFinal = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimestre) / 4
+var notasSomadas = (notaDoPrimeiroBimestre + notaDoSegundoBimestre + notaDoTerceiroBimestre + notaDoQuartoBimestre)
+
+var notaFinal = notasSomadas / 4
 
 var notaFixada = notaFinal.toFixed(1)
 
+if (notaFinal >5) {var situação = "ALUNO APROVADO"} 
+if (notaFinal <5) {var situação = "ALUNO REPROVADO"}
+
 console.log ("Bem Vindo " + nome)
 console.log (notaFixada)
+console.log (situação)
 
 //isso é um comentário
 
